@@ -1,0 +1,10 @@
+#\!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Educational Code Quality: Run comprehensive checks before each commit
+echo "🔍 Running pre-commit quality checks for MathChamp..."
+
+# Run lint-staged for incremental checks
+npx lint-staged
+
+echo "✅ Pre-commit checks completed successfully\!"
